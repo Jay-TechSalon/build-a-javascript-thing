@@ -1,0 +1,76 @@
+// basic styling, vars, fonts, and colors
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+$font-base: 400 1.3rem/1rem ‘Lato’, sans-serif;
+$font-text-area: 300 1rem/1rem ‘Lato’, sans-serif;
+$font-title: 700 2.5rem/2.5rem ‘Lato’, sans-serif;
+$font-subtitle: 700 2rem/2rem ‘Lato’, sans-serif;
+$font-thin: 300 1.2rem/1.7rem ‘Lato’, sans-serif;
+
+$accent-color: #3191A6;
+$body-bkg-color: #DBDBCD;
+$info-bkg-color: #E6E6D1;
+
+.main-nav {
+  button {
+    font: $font-thin;
+    color: $accent-color;
+  }
+  a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: $accent-color;
+    }
+}
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+body {
+  background-color: $body-bkg-color;
+}
+h1 {
+  font: $font-title;
+  margin-left: .5rem;
+}
+.book-review, .our-review {
+  padding: 1rem;
+  background-color: $info-bkg-color;
+  margin-bottom: 2%;
+  h2 {
+    font: $font-subtitle;
+    margin: 0rem;
+  }
+  h3 {
+    font: $font-base;
+      color: $accent-color;
+      margin-top: .2rem;
+  }
+  input, select, textarea {
+    width: 100%;
+    height: 1.5rem;
+    margin-bottom: .3rem;
+    font: $font-text-area;
+    }
+  textarea {
+    margin-top: 0.2rem;
+    height: 4rem;
+    border: 1px solid #CCC;
+    }
+  img {
+    padding: 0 1rem 0 0;
+    width: 10rem;
+    float: left;
+  }
+  p {
+    font: $font-thin;
+    color: #333;
+    &:nth-child(2) {
+      font: $font-base;
+      color: $accent-color;
+      margin-top: .4rem;
+    }
+  }
+}
